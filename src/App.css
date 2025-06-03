@@ -1,0 +1,183 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: #fff;
+  color: #393939;
+}
+
+/* 全体レイアウト */
+.container {
+  padding: 2rem;
+}
+
+/* ヘッダー */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav {
+  display: flex;
+  gap: 2rem;
+  font-size: 0.9rem;
+}
+
+.nav button {
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  padding: 0;
+  outline: none;
+}
+
+.nav button:hover {
+  text-decoration: underline;
+}
+
+.nav .active {
+  color: #d55c5c;
+}
+
+/* 星マーク */
+.star {
+  color: #ddd;
+  font-size: 1.2rem;
+}
+
+/* プロフィールページ */
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 70px;
+}
+
+.profile-image {
+  width: 280px;
+  height: 280px;
+  background-color: #ddd;
+  margin-bottom: 2rem;
+}
+
+.profile-text {
+  text-align: center;
+  font-size: 0.9rem;
+  line-height: 2;
+}
+
+/* フォトページ */
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 6rem;
+  padding: 30px 160px;
+}
+
+.photo-card {
+  aspect-ratio: 4 / 3;
+  background-color: #ddd;
+}
+
+/* リンクページ */
+.link {
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 3rem;
+}
+
+.photo-image,
+.photo-card {
+  /* border-radius: 8px; */
+  object-fit: cover;
+  width: 100%;
+  height: 200px;
+}
+.photo-image1 {
+  /* border-radius: 8px; */
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.8); /* 少し白いレイヤーに変更 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 5rem 4rem 7rem;
+  border-radius: 6px;
+  box-shadow: 0 0 20px rgba(98, 98, 98, 0.1);
+  text-align: center;
+  max-width: 400px;
+  max-height: 300px;
+  width: 90%;
+  height: 90%;
+}
+
+.modal-image {
+  width: 90%;
+  height: 90%;
+  background-color: #ddd;
+  object-fit: cover;
+  margin: auto;
+}
+
+.modal-caption {
+  font-size: 0.95rem;
+  color: #111;
+}
+
+img:focus {
+  outline: none;
+}
+
+.star {
+  color: #e9e9e9;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+/* アニメーション：ポンっと跳ねる */
+@keyframes pop {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.animate-pop {
+  animation: pop 0.5s ease;
+}
+
+.star-on {
+  color: rgb(255, 237, 145);
+}
+/* .star {
+  transition: color 0.3s ease;
+} */
