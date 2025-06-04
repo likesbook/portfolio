@@ -1,9 +1,11 @@
 {
+  "homepage": "https://likesbook.github.io/portfolio",
   "name": "zine-site",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predeploy": "npm run build",
     "dev": "vite",
     "lint": "eslint .",
     "preview": "vite preview",
