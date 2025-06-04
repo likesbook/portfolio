@@ -97,7 +97,15 @@ export default function Portfolio() {
           </div>
         )}
 
-        {page === "link" && <div className="link">リンクページ準備中</div>}
+        {page === "link" && (
+          <div className="link">
+            {/* <h2>リンク</h2> */}
+
+            <a href="https://github.com/likesbook" target="_blank">
+              GitHub
+            </a>
+          </div>
+        )}
       </main>
 
       {modalPhoto && (
