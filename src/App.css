@@ -62,10 +62,16 @@ body {
 }
 
 .profile-image {
-  width: 280px;
-  height: 280px;
+  width: 200px;
+  height: 200px;
   background-color: #ddd;
   margin-bottom: 2rem;
+}
+
+.photo-image1 {
+  object-fit: cover;
+  width: 200px;
+  height: 200px;
 }
 
 .profile-text {
@@ -76,36 +82,17 @@ body {
 
 /* フォトページ */
 .photo-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 6rem;
-  padding: 30px 160px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5.5rem;
+  padding: 30px 4rem;
 }
 
-.photo-card {
-  aspect-ratio: 4 / 3;
-  background-color: #ddd;
-}
-
-/* リンクページ */
-.link {
-  text-align: center;
-  font-size: 0.9rem;
-  margin-top: 3rem;
-}
-
-.photo-image,
-.photo-card {
-  /* border-radius: 8px; */
+.photo-image {
   object-fit: cover;
-  width: 100%;
+  width: 200px;
   height: 200px;
-}
-.photo-image1 {
-  /* border-radius: 8px; */
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
 }
 
 .modal-overlay {
@@ -146,6 +133,13 @@ body {
   color: #111;
 }
 
+/* リンクページ */
+.link {
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 3rem;
+}
+
 img:focus {
   outline: none;
 }
@@ -178,6 +172,3 @@ img:focus {
 .star-on {
   color: rgb(255, 237, 145);
 }
-/* .star {
-  transition: color 0.3s ease;
-} */

@@ -19,7 +19,7 @@ const photos = [
   { src: photo5, alt: "写真5", caption: "photo" },
   { src: photo6, alt: "写真6", caption: "photo" },
   { src: photo7, alt: "写真7", caption: "photo" },
-  { src: photo8, alt: "写真8", caption: "photo" },
+  // { src: photo8, alt: "写真8", caption: "photo" },
   { src: photo9, alt: "写真9", caption: "photo" },
   { src: photo10, alt: "写真10", caption: "photo" },
 ];
@@ -94,16 +94,6 @@ export default function Portfolio() {
                 onClick={() => setModalPhoto(photo)}
               />
             ))}
-            {/* <img src={photo1} alt="説明" className="photo-image" />
-            <img src={photo2} alt="説明" className="photo-image" />
-            <img src={photo3} alt="説明" className="photo-image" />
-            <img src={photo4} alt="説明" className="photo-image" />
-            <img src={photo5} alt="説明" className="photo-image" />
-            <img src={photo6} alt="説明" className="photo-image" />
-            <img src={photo7} alt="説明" className="photo-image" />
-            <img src={photo8} alt="説明" className="photo-image" />
-            <img src={photo9} alt="説明" className="photo-image" />
-            <img src={photo10} alt="説明" className="photo-image" /> */}
           </div>
         )}
 
