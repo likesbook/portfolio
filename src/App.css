@@ -35,7 +35,7 @@ body {
   color: inherit;
   cursor: pointer;
   font: inherit;
-  padding: 0;
+  padding: 0 5px;
   outline: none;
 }
 
@@ -135,7 +135,8 @@ body {
 }
 
 /* リンクページ */
-.link {
+.link,
+.works {
   text-align: center;
   font-size: 0.9rem;
   margin-top: 3rem;

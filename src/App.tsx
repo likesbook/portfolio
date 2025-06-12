@@ -42,19 +42,25 @@ export default function Portfolio() {
             className={page === "profile" ? "active" : ""}
             onClick={() => setPage("profile")}
           >
-            プロフィール
+            PROFILE
           </button>
           <button
             className={page === "photo" ? "active" : ""}
             onClick={() => setPage("photo")}
           >
-            フォト
+            PHOTO
+          </button>
+          <button
+            className={page === "works" ? "active" : ""}
+            onClick={() => setPage("works")}
+          >
+            WORKS
           </button>
           <button
             className={page === "link" ? "active" : ""}
             onClick={() => setPage("link")}
           >
-            リンク
+            LINK
           </button>
         </nav>
         <span
@@ -94,6 +100,12 @@ export default function Portfolio() {
                 onClick={() => setModalPhoto(photo)}
               />
             ))}
+          </div>
+        )}
+
+        {page === "works" && (
+          <div className="works">
+            <p> 作成中</p>
           </div>
         )}
 
