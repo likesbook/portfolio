@@ -6,7 +6,7 @@ import photo3 from "./assets/photo3.jpeg";
 import photo4 from "./assets/photo4.jpeg";
 import photo5 from "./assets/photo5.jpeg";
 import photo6 from "./assets/photo6.jpeg";
-import photo7 from "./assets/photo7.jpeg";
+// import photo7 from "./assets/photo7.jpeg";
 import photo8 from "./assets/photo8.jpeg";
 import photo9 from "./assets/photo9.jpeg";
 import photo10 from "./assets/photo10.jpeg";
@@ -18,7 +18,7 @@ const photos = [
   { src: photo4, alt: "写真4", caption: "photo" },
   { src: photo5, alt: "写真5", caption: "photo" },
   { src: photo6, alt: "写真6", caption: "photo" },
-  { src: photo7, alt: "写真7", caption: "photo" },
+  // { src: photo7, alt: "写真7", caption: "photo" },
   // { src: photo8, alt: "写真8", caption: "photo" },
   { src: photo9, alt: "写真9", caption: "photo" },
   { src: photo10, alt: "写真10", caption: "photo" },
