@@ -216,3 +216,74 @@ img:focus {
     font-size: 0.85rem;
   }
 }
+.feature-card {
+  max-width: 640px;
+  margin: 80px auto;
+  background-color: #f9f9f9;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  font-family: "Hiragino Sans", sans-serif;
+  overflow: hidden;
+  color: #444;
+}
+
+.feature-image {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.feature-text {
+  padding: 32px 24px;
+  text-align: left;
+}
+
+.feature-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.feature-description {
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 24px;
+}
+
+.view-site-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+  background-color: #5a85c0;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.view-site-button:hover {
+  background-color: #496892;
+}
+
+.image-stack {
+  position: relative;
+  width: fit-content;
+  max-width: 100%;
+  margin: 50px 0 0 50px;
+}
+
+.image-stack .feature-image {
+  width: 40%;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.image-stack .overlay {
+  position: absolute;
+  top: 20px;
+  left: 100px;
+  opacity: 0.95;
+  z-index: 1;
+}

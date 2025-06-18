@@ -10,6 +10,8 @@ import photo6 from "./assets/photo6.jpeg";
 import photo8 from "./assets/photo8.jpeg";
 import photo9 from "./assets/photo9.jpeg";
 import photo10 from "./assets/photo10.jpeg";
+import works1 from "./assets/works1.jpeg";
+import works2 from "./assets/works2.jpeg";
 
 const photos = [
   { src: photo1, alt: "写真1", caption: "photo" },
@@ -105,7 +107,39 @@ export default function Portfolio() {
 
         {page === "works" && (
           <div className="works">
-            <p> 作成中</p>
+            <section className="feature-card">
+              <div className="image-stack">
+                <img
+                  src={works1}
+                  alt="MACHIBLUEのWebサイトサムネイル"
+                  className="feature-image base"
+                />
+                <img
+                  src={works2}
+                  alt="MACHIBLUEのWebサイトサムネイル"
+                  className="feature-image overlay"
+                />
+              </div>
+
+              <div className="feature-text">
+                <h3 className="feature-title">
+                  MACHIBLUE - バンド公式Webサイト
+                </h3>
+                <p className="feature-description">
+                  STUDIOを使って余白・タイポグラフィ・写真の空気感にこだわり、
+                  <br />
+                  シンプルながらも深みのあるデザインに仕上げました。
+                </p>
+                <a
+                  href="https://machiblue-band.studio.site"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="view-site-button"
+                >
+                  ▶ サイトを見る
+                </a>
+              </div>
+            </section>
           </div>
         )}
 
