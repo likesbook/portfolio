@@ -148,12 +148,12 @@ export default function Portfolio() {
               <div className="image-stack">
                 <img
                   src={works3}
-                  alt="MACHIBLUEのWebサイトサムネイル"
+                  alt="Cafe QuartettoのWebサイトサムネイル"
                   className="feature-image base"
                 />
                 <img
                   src={works4}
-                  alt="MACHIBLUEのWebサイトサムネイル"
+                  alt="Cafe QuartettoのWebサイトサムネイル"
                   className="feature-image overlay"
                 />
               </div>
