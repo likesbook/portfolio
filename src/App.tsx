@@ -12,6 +12,8 @@ import photo9 from "./assets/photo9.jpeg";
 import photo10 from "./assets/photo10.jpeg";
 import works1 from "./assets/works1.jpeg";
 import works2 from "./assets/works2.jpeg";
+import works3 from "./assets/works3.jpeg";
+import works4 from "./assets/works4.jpeg";
 
 const photos = [
   { src: photo1, alt: "写真1", caption: "photo" },
@@ -87,6 +89,7 @@ export default function Portfolio() {
               <p>フロントエンドエンジニア。</p>
               <p>スキル： HTML / CSS / React / TypeScript</p>
               <p>ラジオとベトナム料理が好きです。</p>
+              <p> ✉️ お問い合わせ：ikuno.dev@gmail.com</p>
             </div>
           </div>
         )}
@@ -132,6 +135,37 @@ export default function Portfolio() {
                 </p>
                 <a
                   href="https://machiblue-band.studio.site"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="view-site-button"
+                >
+                  ▶ サイトを見る
+                </a>
+              </div>
+            </section>
+
+            <section className="feature-card">
+              <div className="image-stack">
+                <img
+                  src={works3}
+                  alt="MACHIBLUEのWebサイトサムネイル"
+                  className="feature-image base"
+                />
+                <img
+                  src={works4}
+                  alt="MACHIBLUEのWebサイトサムネイル"
+                  className="feature-image overlay"
+                />
+              </div>
+              <div className="feature-text">
+                <h3 className="feature-title">
+                  Cafe Quartetto - カフェのWebサイト
+                </h3>
+                <p className="feature-description">
+                  HTML5、CSS3を使用し作成し、明るく落ち着いた雰囲気に仕上げました。
+                </p>
+                <a
+                  href="https://likesbook.github.io/cafe-quartetto/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="view-site-button"
