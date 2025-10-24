@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./App.css";
+import profilePhoto from "./assets/neko.jpeg";
 import photo1 from "./assets/photo1.jpeg";
 import photo2 from "./assets/photo2.jpeg";
 import photo3 from "./assets/photo3.jpeg";
@@ -23,7 +24,7 @@ const photos = [
   { src: photo5, alt: "写真5", caption: "photo" },
   { src: photo6, alt: "写真6", caption: "photo" },
   // { src: photo7, alt: "写真7", caption: "photo" },
-  // { src: photo8, alt: "写真8", caption: "photo" },
+  { src: photo8, alt: "写真8", caption: "photo" },
   { src: photo9, alt: "写真9", caption: "photo" },
   { src: photo10, alt: "写真10", caption: "photo" },
 ];
@@ -81,14 +82,20 @@ export default function Portfolio() {
         {page === "profile" && (
           <div className="profile">
             <div className="profile-image">
-              <img src={photo8} alt="profile" className="photo-image1" />
+              <img
+                src={profilePhoto}
+                alt="プロフィール写真"
+                className="photo-image1"
+              />
             </div>
             <div className="profile-text">
-              <p>1999年生まれ。</p>
-              <p>東京在住。</p>
+              <p>
+                【このサイトについて】このポートフォリオサイトは、TypeScript、Reactで作成しています。
+              </p>
+              <p>東京在住。1999年生まれ。</p>
               <p>フロントエンドエンジニア。</p>
               <p>スキル： HTML / CSS / React / TypeScript</p>
-              <p>ラジオとベトナム料理が好きです。</p>
+              <p>好きなもの：ラジオとタイ料理</p>
               <p> ✉️ お問い合わせ：ikuno.dev@gmail.com</p>
             </div>
           </div>
