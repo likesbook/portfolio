@@ -90,7 +90,7 @@ export default function Portfolio() {
             </div>
             <div className="profile-text">
               <p>
-                【このサイトについて】このポートフォリオサイトは、TypeScript、Reactで作成しています。
+                【このサイトについて】このサイトは、TypeScript、Reactで作成しています。
               </p>
               <br></br>
               <p>東京在住。1999年生まれ。</p>
