@@ -92,6 +92,7 @@ export default function Portfolio() {
               <p>
                 【このサイトについて】このポートフォリオサイトは、TypeScript、Reactで作成しています。
               </p>
+              <br></br>
               <p>東京在住。1999年生まれ。</p>
               <p>フロントエンドエンジニア。</p>
               <p>スキル： HTML / CSS / React / TypeScript</p>
